@@ -1,0 +1,71 @@
+[
+  {
+    "type": "Programming Languages",
+    "items": [
+      "Java (4 yrs)",
+      "Javascript/Typescript (4 yrs)",
+      "Python (3 yrs)",
+      "Go",
+      "C++",
+      "Kotlin",
+      "PHP",
+      "Lua",
+      "Rust",
+      "Bash",
+      "Markdown",
+      "SQL",
+      "HTML/CSS",
+      "LaTeX",
+      "XML",
+      "TOML"
+    ]
+  },
+  {
+    "type": "Frameworks and Libraries",
+    "items": [
+      "Spring Boot",
+      "Node.js",
+      "React",
+      "MUI",
+      "NestJS",
+      "Vite",
+      "JUnit",
+      "Nest.js",
+      "Drizzle ORM"
+    ]
+  },
+  {
+    "type": "Databases and APIs",
+    "items": [
+      "MySQL (3yrs)",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "HTTPS",
+      "RESTful",
+      "GraphQL",
+      "WebSockets",
+      "gRPC"
+    ]
+  },
+  {
+    "type": "Tools and Platforms",
+    "items": [
+      "Git",
+      "GitHub",
+      "Nginx",
+      "systemd",
+      "Docker",
+      "AWS EC2",
+      "AWS Lightsail",
+      "POSIX",
+      "npm/pnpm",
+      "Neovim",
+      "Postman"
+    ]
+  },
+  {
+    "type": "Machine Learning",
+    "items": ["Numpy", "Matplotlib", "Scikit-learn", "PyTorch"]
+  }
+]
