@@ -1,0 +1,114 @@
+\documentclass[letterpaper,10pt]{article}
+
+% Reduce the default LaTeX page margins and remove default headers and footers.
+\usepackage[empty]{fullpage}
+
+% Customize headers and footers.
+\usepackage{fancyhdr}
+
+% Customize section headings (e.g., font size and spacing).
+\usepackage{titlesec}
+
+% Add a collection of useful symbols, such as phone(☎) and email(✉).
+\usepackage{marvosym}
+
+% Enable text and background color support with a broader palette.
+\usepackage[usenames,dvipsnames]{color}
+
+% Allow inclusion of verbatim (unformatted) text blocks and commenting out multiple lines.
+\usepackage{verbatim}
+
+% Provide fine control over list environments (itemize, enumerate, and description).
+\usepackage{enumitem}
+
+% Turn URLs, emails, and references into clickable hyperlinks in the PDF.
+\usepackage[hidelinks]{hyperref}
+
+% Clear all header and footer fields.
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{5pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1in}
+
+% LaTeX displays URLs using monospaced by default; this command tells LaTeX to render URLs with regular serif or sans-serif fonts.
+\urlstyle{same}
+
+% Tell LaTeX not to stretch the vertical spacing between paragraphs or sections to fill the entire page height.
+\raggedbottom
+
+% Align text to the left margin with a ragged right edge (i.e., no full justification).
+\raggedright
+
+% Set the horizontal padding on each side of a column in a tabular environment to 0 inches.
+\setlength{\tabcolsep}{0in}
+
+% Adjust the left padding of the items.
+\usepackage{enumitem}
+
+% Format sections; insert a black horizontal rule under the section title.
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[
+  \color{black}\titlerule \vspace{-5pt}
+]
+
+% Mark a resume subheading. The title is all-caps, and a horizontal rule is drawn under the title.
+% 
+% #1 - company
+% #2 - location (aligned right)
+% #3 - job title or degree
+% #4 - date (aligned right)
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.995\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \small #4 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+% Mark the start of a subheading list.
+\newcommand{\resumeSubHeadingListStart}{}
+
+% Mark the end of a subheading list.
+\newcommand{\resumeSubHeadingListEnd}{\vspace{-10pt}}
+
+% Mark a resume item.
+\newcommand{\resumeItem}[2]{
+  \item\small{\textbf{#1}{:#2\vspace{-6pt}}}
+}
+
+% Mark a resume item without titles.
+\newcommand{\resumeItemNoTitle}[1]{
+  \item\small{#1\vspace{-8pt}}
+}
+
+% Mark the start of a resume item list.
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=14pt]}
+
+% Mark the end of a resume item list.
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+% Mark resume item list below subheading start.
+\newcommand{\resumeItemListBelowSubHeadingStart}{
+  \vspace{-10pt}\resumeItemListStart
+}
+
+% Mark resume item list below subheading end.
+\newcommand{\resumeItemListBelowSubHeadingEnd}{
+  \resumeItemListEnd\vspace{4pt}
+}
+
+\begin{document}
+
+<content>
+
+\end{document}
