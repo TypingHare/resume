@@ -1,0 +1,35 @@
+{
+  "name": "resume",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build:resume": "bun src/build-resume.ts",
+    "build:software-engineer": "bun build:resume software-engineer build/software-engineer.tex",
+    "make:software-engineer": "bun build:software-engineer && latexmk -pdf -cd build/software-engineer.tex",
+    "release:software-engineer": "bun make:software-engineer && mkdir -p release && cp build/software-engineer.pdf release/",
+    "clear": "rm -rf build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.8.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 80,
+    "tabWidth": 2,
+    "overrides": [
+      {
+        "files": "*.ts",
+        "options": {
+          "tabWidth": 4
+        }
+      }
+    ]
+  }
+}

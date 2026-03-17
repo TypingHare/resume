@@ -1,0 +1,11 @@
+# macOS system files
+.DS_Store
+
+# dependencies
+/node_modules/
+
+# build output
+/build/
+
+# latex
+indent.log
