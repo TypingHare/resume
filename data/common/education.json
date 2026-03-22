@@ -5,8 +5,8 @@
     "major": "Computer Science",
     "gpa": "4.0",
     "maxGpa": "4.0",
-    "enrollmentDate": "2022-06",
-    "graduationDate": "2023-12",
+    "enrollmentDate": "Jun. 2022",
+    "graduationDate": "Dec. 2023",
     "location": "Boston, MA"
   },
   {
@@ -15,8 +15,8 @@
     "major": "Computer Science",
     "gpa": "4.0",
     "maxGpa": "4.0",
-    "enrollmentDate": "2024-01",
-    "graduationDate": "2027-05",
+    "enrollmentDate": "Jan. 2024",
+    "graduationDate": "May. 2025",
     "location": "Lowell, MA"
   }
 ]

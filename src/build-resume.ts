@@ -16,9 +16,13 @@ if (!outPath) {
 }
 
 import path from 'path'
-import type { Env, Heading } from './interfaces'
+import type { EducationEntry, Env, Heading, SkillEntry } from './interfaces'
 import { loadDataFromJson } from './data'
-import { renderHeadingSection } from './sections'
+import {
+    renderEducationSection,
+    renderHeadingSection,
+    renderSkillsSection,
+} from './sections'
 import { loadTemplateContent, replaceTemplatePlaceholders } from './template'
 
 const DATA_DIR = 'data'
@@ -29,8 +33,18 @@ const env: Env = { commonDir: COMMON_DIR, resumeDir: RESUME_DIR }
 
 async function build() {
     const heading = await loadDataFromJson<Heading>(env, 'heading')
+    const educationEntries = await loadDataFromJson<EducationEntry[]>(
+        env,
+        'education'
+    )
+    const skillEntries = await loadDataFromJson<SkillEntry[]>(env, 'skills')
 
-    const contentItems: string[] = [await renderHeadingSection(heading)]
+    const contentItems: string[] = [
+        await renderHeadingSection(heading),
+        await renderEducationSection(educationEntries),
+        await renderSkillsSection(skillEntries),
+    ]
+
     const fileContent: string = replaceTemplatePlaceholders(
         await loadTemplateContent('main'),
         { content: contentItems.join('\n') }
