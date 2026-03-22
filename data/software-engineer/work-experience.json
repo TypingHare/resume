@@ -1,0 +1,40 @@
+[
+  {
+    "company": "UMass Lowell - Miner School of Computer and Information Sciences",
+    "position": "Software Engineering Intern",
+    "startDate": "May. 2025",
+    "endDate": "Dec. 2025",
+    "location": "Lowell, MA",
+    "items": [
+      "Migrated 25k+ AEPW (Alliance to End Plastic Waste) records into a redesigned PostgreSQL schema, cutting query times by about 70\\% and improving data integrity.",
+      "Designed and implemented AUDA, a modular Python analytics platform for reproducible data migration, preprocessing, forecasting, and visualization workflows.",
+      "Built and evaluated machine learning workflows for sparse country-level time series, including Isolation Forest anomaly detection, Random Forest feature importance, and SVR forecasting with automated hyperparameter optimization.",
+      "Developed a Typer-based CLI to automate end-to-end analytics workflows, improving reproducibility, maintainability, and developer productivity."
+    ]
+  },
+  {
+    "company": "Take 2 Health",
+    "position": "Backend Developer Intern",
+    "startDate": "Mar. 2021",
+    "endDate": "Sep. 2021",
+    "location": "Shenzhen, China",
+    "items": [
+      "Engineered the backend for a blood specimen management platform using Midway.js, implementing JWT-based authentication and RESTful APIs for user and specimen operations.",
+      "Authored Swagger API documentation to streamline integration and testing, and collaborated with frontend engineers to ensure reliable interface behavior.",
+      "Architected a microservice-based system using gRPC for high-performance inter-service communication, improving scalability and modularity."
+    ]
+  },
+  {
+    "company": "Juyingtong",
+    "position": "Backend Developer",
+    "startDate": "Nov. 2018",
+    "endDate": "Feb. 2020",
+    "location": "Zhuhai, China",
+    "items": [
+      "Developed the backend for a WeChat mini-program for conference management using ThinkPHP 5 and MySQL, with Redis-backed session authentication and RESTful APIs for user and event operations.",
+      "Built a location-aware attendee check-in system using QR code scanning, encrypted conference metadata, WeChat geolocation validation, and real-time attendance recording.",
+      "Integrated the WeChat Pay API to support secure, real-time payment processing for conference registration and related services.",
+      "Deployed the application on Alibaba Cloud Linux servers with Nginx reverse proxy and load balancing, using systemd for process management."
+    ]
+  }
+]

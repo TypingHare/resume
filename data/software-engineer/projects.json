@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Course Sync",
+    "description": "A serverless course synchronization CLI for instructors and students using \\textbf{Go}, \\textbf{Cobra}, \\textbf{Git}, and \\textbf{JSON}-backed repositories. Engineered a \\textbf{layered architecture} with domain services, CLI workflows, and atomic local persistence to manage assignments, document releases, and student records without central infrastructure. Features include role-based sync commands, automated distribution of course materials, and \\textbf{content-hash-based submission tracking} for reproducible assignment handins. (Repository: \\href{https://github.com/TypingHare/course-sync}{https://github.com/TypingHare/course-sync})"
+  },
+  {
+    "name": "BG Clock",
+    "description": "A responsive touchscreen clock application for board games like Chess and Go using \\textbf{Vite}, \\textbf{React}, \\textbf{Chakra UI}, and \\textbf{TypeScript}. Engineered a \\textbf{modular game core} with a precise game loop and extensible trigger system for accurate timekeeping and flexible mode support. Features include customizable timers, sound alerts, and multimode gameplay. (Live Demo: \\href{https://bgc.jameschen.life}{https://bgc.jameschen.life})"
+  }
+]

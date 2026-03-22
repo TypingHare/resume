@@ -1,5 +1,11 @@
 import { parseDate } from './common'
-import type { EducationEntry, Heading, SkillEntry } from './interfaces'
+import type {
+    EducationEntry,
+    Heading,
+    ProjectEntry,
+    SkillEntry,
+    WorkExperienceEntry,
+} from './interfaces'
 import { loadTemplateContent, replaceTemplatePlaceholders } from './template'
 
 /**
@@ -75,19 +81,75 @@ export async function renderEducationSection(
  * Renders the skills section as a LaTeX list of skill categories and their
  * comma-separated items.
  *
- * @param skills Skill categories loaded from `skills.json`.
+ * @param skillEntries Skill categories loaded from `skills.json`.
  * @returns The rendered skills section as a LaTeX string.
  */
 export async function renderSkillsSection(
-    skills: SkillEntry[]
+    skillEntries: SkillEntry[]
 ): Promise<string> {
     const lines: string[] = ['\\section{Skills}', '\\resumeItemListStart']
 
-    for (const i in skills) {
-        const { type, items } = skills[i] as SkillEntry
+    for (const i in skillEntries) {
+        const { type, items } = skillEntries[i] as SkillEntry
         lines.push(`\\resumeItem{${type}}{${items.join(', ')}}`)
     }
 
+    lines.push(`\\resumeItemListEnd`)
+
+    return lines.join('\n')
+}
+
+export async function renderWorkExperienceSection(
+    workExperienceEntries: WorkExperienceEntry[]
+): Promise<string> {
+    const lines: string[] = [
+        '\\section{Work Experience}',
+        '\\resumeSubHeadingListStart',
+    ]
+
+    workExperienceEntries = workExperienceEntries.sort((a, b) => {
+        return (
+            parseDate(a.startDate).getTime() - parseDate(b.startDate).getTime()
+        )
+    })
+
+    for (const i in workExperienceEntries) {
+        const { company, position, startDate, endDate, location, items } =
+            workExperienceEntries[i] as WorkExperienceEntry
+
+        lines.push(`\\resumeSubheading`)
+        lines.push(`{${company}}`)
+        lines.push(`{${location}}`)
+        lines.push(`{${position}}`)
+        lines.push(`{${startDate} -- ${endDate}}`)
+
+        lines.push(`\\resumeItemListBelowSubHeadingStart`)
+        for (const item of items) {
+            lines.push(`\\resumeItemNoTitle{${item}}`)
+        }
+        lines.push(`\\resumeItemListBelowSubHeadingEnd`)
+    }
+
+    lines.push(`\\resumeSubHeadingListEnd`)
+
+    return lines.join('\n')
+}
+
+export async function renderProjectsSection(
+    projectEntries: ProjectEntry[]
+): Promise<string> {
+    const lines: string[] = [
+        '\\section{Projects}',
+        '\\resumeSubHeadingListStart',
+        '\\resumeItemListStart',
+    ]
+
+    for (const i in projectEntries) {
+        const { name, description } = projectEntries[i] as ProjectEntry
+        lines.push(`\\resumeItem{${name}}{${description}}`)
+    }
+
+    lines.push(`\\resumeSubHeadingListEnd`)
     lines.push(`\\resumeItemListEnd`)
 
     return lines.join('\n')

@@ -68,11 +68,12 @@ export interface SkillEntry {
  * @property company Company name for the experience entry.
  * @property position Job title or role held at the company.
  * @property startDate Start date shown for the experience entry.
- * @property endDate End date shown for the experience entry, or `null` if ongoing.
+ * @property endDate End date shown for the experience entry, or `null` if
+ *     ongoing.
  * @property location Location displayed for the experience entry.
  * @property items Bullet points or accomplishments for the experience entry.
  */
-export interface ExperienceEntry {
+export interface WorkExperienceEntry {
     company: string
     position: string
     startDate: string
