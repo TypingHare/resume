@@ -44,8 +44,8 @@ export async function renderEducationSection(
 
     educationEntries = educationEntries.sort((a, b) => {
         return (
-            parseDate(a.graduationDate).getTime() -
-            parseDate(b.graduationDate).getTime()
+            parseDate(b.graduationDate).getTime() -
+            parseDate(a.graduationDate).getTime()
         )
     })
 
@@ -59,6 +59,7 @@ export async function renderEducationSection(
             enrollmentDate,
             graduationDate,
             location,
+            scholarship,
         } = educationEntries[i] as EducationEntry
 
         const gpaString = gpa ? `; GPA: ${gpa}/${maxGpa}` : ''
@@ -67,7 +68,17 @@ export async function renderEducationSection(
         lines.push(`{${school}}`)
         lines.push(`{${location}}`)
         lines.push(`{${degree} in ${major}${gpaString}}`)
-        lines.push(`{${enrollmentDate} -- ${graduationDate}}`)
+
+        if (enrollmentDate) {
+            lines.push(`{${enrollmentDate} -- ${graduationDate}}`)
+        } else {
+            lines.push(`{Expected ${graduationDate}}`)
+        }
+
+        if (scholarship) {
+            lines.push(`\\par\\vspace{-4 pt}`)
+            lines.push(`${scholarship}`)
+        }
 
         if (Number(i) !== educationEntries.length - 1) {
             lines.push(`\\vspace{6 pt}`)
@@ -111,7 +122,7 @@ export async function renderWorkExperienceSection(
 
     workExperienceEntries = workExperienceEntries.sort((a, b) => {
         return (
-            parseDate(a.startDate).getTime() - parseDate(b.startDate).getTime()
+            parseDate(b.startDate).getTime() - parseDate(a.startDate).getTime()
         )
     })
 

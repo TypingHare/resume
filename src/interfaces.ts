@@ -38,6 +38,8 @@ export interface Heading {
  * @property enrollmentDate Start date shown for the education entry.
  * @property graduationDate End or graduation date used for display and sorting.
  * @property location Location displayed for the school.
+ * @property scholarship Optional scholarship or award information shown in the
+ *   education entry.
  */
 export interface EducationEntry {
     school: string
@@ -48,6 +50,7 @@ export interface EducationEntry {
     enrollmentDate: string
     graduationDate: string
     location: string
+    scholarship?: string
 }
 
 /**

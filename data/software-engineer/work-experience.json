@@ -6,10 +6,10 @@
     "endDate": "Dec. 2025",
     "location": "Lowell, MA",
     "items": [
-      "Migrated 25k+ AEPW (Alliance to End Plastic Waste) records into a redesigned PostgreSQL schema, cutting query times by about 70\\% and improving data integrity.",
-      "Designed and implemented AUDA, a modular Python analytics platform for reproducible data migration, preprocessing, forecasting, and visualization workflows.",
-      "Built and evaluated machine learning workflows for sparse country-level time series, including Isolation Forest anomaly detection, Random Forest feature importance, and SVR forecasting with automated hyperparameter optimization.",
-      "Developed a Typer-based CLI to automate end-to-end analytics workflows, improving reproducibility, maintainability, and developer productivity."
+      "Migrated 28k+ AEPW (Alliance to End Plastic Waste) records into a analytical PostgreSQL schema, cutting query times by about 70\\% and improving data integrity.",
+      "Designed and implemented AUDA, a Python analytics platform for data cleaning, preprocessing, model execution, and visualization.",
+      "Built and evaluated machine learning workflows for sparse country-level time series, including Isolation Forest anomaly detection, Random Forest feature importance, and forecasting/reconstruction with automated hyperparameter optimization.",
+      "Developed a Typer-based CLI to automate analytics workflows, improving reproducibility, maintainability, and developer productivity."
     ]
   },
   {
@@ -20,7 +20,7 @@
     "location": "Shenzhen, China",
     "items": [
       "Engineered the backend for a blood specimen management platform using Midway.js, implementing JWT-based authentication and RESTful APIs for user and specimen operations.",
-      "Authored Swagger API documentation to streamline integration and testing, and collaborated with frontend engineers to ensure reliable interface behavior.",
+      "Created Swagger API documentation to streamline integration and testing, and collaborated with frontend engineers to ensure reliable interface behavior.",
       "Architected a microservice-based system using gRPC for high-performance inter-service communication, improving scalability and modularity."
     ]
   },

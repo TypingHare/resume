@@ -31,13 +31,19 @@
       "Vite",
       "JUnit",
       "Nest.js",
-      "Drizzle ORM"
+      "Drizzle ORM",
+      "Numpy",
+      "Pandas",
+      "Matplotlib",
+      "Scikit-learn",
+      "PyTorch",
+      "Typer"
     ]
   },
   {
     "type": "Databases and APIs",
     "items": [
-      "MySQL (3yrs)",
+      "MySQL",
       "PostgreSQL",
       "MongoDB",
       "Redis",
@@ -45,7 +51,7 @@
       "RESTful",
       "GraphQL",
       "WebSockets",
-      "gRPC"
+      "Swagger"
     ]
   },
   {
@@ -56,16 +62,24 @@
       "Nginx",
       "systemd",
       "Docker",
-      "AWS EC2",
-      "AWS Lightsail",
+      "AWS EC2/Lightsail",
       "POSIX",
-      "npm/pnpm",
+      "npm/pnpm/bun",
       "Neovim",
       "Postman"
     ]
   },
   {
-    "type": "Machine Learning",
-    "items": ["Numpy", "Matplotlib", "Scikit-learn", "PyTorch"]
+    "type": "AI",
+    "items": [
+      "OpenAI API",
+      "Kaggle",
+      "NLP",
+      "Neural Networks",
+      "Transformer/GPT",
+      "LoRA",
+      "RLHF",
+      "PPO"
+    ]
   }
 ]
