@@ -61,10 +61,12 @@ export async function renderEducationSection(
             location,
         } = educationEntries[i] as EducationEntry
 
+        const gpaString = gpa ? `; GPA: ${gpa}/${maxGpa}` : ''
+
         lines.push(`\\resumeSubheading`)
         lines.push(`{${school}}`)
         lines.push(`{${location}}`)
-        lines.push(`{${degree} in ${major}; GPA: ${gpa}/${maxGpa}}`)
+        lines.push(`{${degree} in ${major}${gpaString}}`)
         lines.push(`{${enrollmentDate} -- ${graduationDate}}`)
 
         if (Number(i) !== educationEntries.length - 1) {

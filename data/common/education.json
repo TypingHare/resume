@@ -1,22 +1,22 @@
 [
   {
-    "school": "Bunker Hill Community College",
-    "degree": "A.S.",
-    "major": "Computer Science",
-    "gpa": "4.0",
-    "maxGpa": "4.0",
-    "enrollmentDate": "Jun. 2022",
-    "graduationDate": "Dec. 2023",
-    "location": "Boston, MA"
-  },
-  {
     "school": "University of Massachusetts Lowell",
     "degree": "B.S./M.S.",
     "major": "Computer Science",
     "gpa": "4.0",
     "maxGpa": "4.0",
     "enrollmentDate": "Jan. 2024",
-    "graduationDate": "May. 2025",
+    "graduationDate": "Dec. 2025",
     "location": "Lowell, MA"
+  },
+  {
+    "school": "Columbia University",
+    "degree": "M.S.",
+    "major": "Computer Science",
+    "gpa": "",
+    "maxGpa": "4.0",
+    "enrollmentDate": "Sep. 2026",
+    "graduationDate": "Dec. 2027",
+    "location": "New York, NY"
   }
 ]
