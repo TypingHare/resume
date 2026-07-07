@@ -1,11 +1,14 @@
 [
   {
-    "name": "Burrow",
-    "description": "An extensible command-line application platform that lets users create independent CLI applications (chambers) composed of extensions, which can start less than 20 milliseconds. There are built-in modules for chamber management, configuration editing, HTTP server startup, and self-build/update workflows."
+    "name": "\\href{https://github.com/TypingHare/burrow}{Burrow}",
+    "description": "An extensible command-line application platform that lets users create independent CLI applications (chambers) composed of extensions, which can start in under 20 milliseconds. There are built-in modules for chamber management, configuration editing, HTTP server startup, and self-build/update workflows."
   },
   {
-    "name": "BG Clock",
-    "__description": "A responsive touchscreen clock application for board games like Chess and Go using \\textbf{Vite}, \\textbf{React}, \\textbf{Chakra UI}, and \\textbf{TypeScript}. It contains a \\textbf{modular game core} with a precise game loop and extensible trigger system for accurate timekeeping and flexible mode support. Features include customizable timers, sound alerts, and multimode gameplay. (Live Demo: \\href{https://bgc.jameschen.life}{https://bgc.jameschen.life})",
-    "description": ""
+    "name": "\\href{https://github.com/TypingHare/bg-clock}{BG Clock}",
+    "description": "A responsive touchscreen clock application for board games like Go and Chess, built with \\textbf{Vite}, \\textbf{React}, and \\textbf{Chakra UI}. It has an internal modular game core with a precise game loop for accurate timekeeping, and an extensible trigger system for flexible mode support. (Live Demo: \\href{https://bgc.jameschen.life}{https://bgc.jameschen.life})"
+  },
+  {
+    "name": "\\href{https://github.com/TypingHare/snowy/tree/main/app/outpost}{(Snowy) Outpost}",
+    "description": "A tool that creates a temporary high-performance DigitalOcean droplet (a cloud instance) and hosts a Minecraft server there. It automatically uploads the game directory on start and downloads it on stop."
   }
 ]
