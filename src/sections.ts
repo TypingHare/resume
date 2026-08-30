@@ -131,10 +131,10 @@ export async function renderWorkExperienceSection(
             workExperienceEntries[i] as WorkExperienceEntry
 
         lines.push(`\\resumeSubheading`)
-        lines.push(`{${company}}`)
-        lines.push(`{${location}}`)
         lines.push(`{${position}}`)
         lines.push(`{${startDate} -- ${endDate}}`)
+        lines.push(`{${company}}`)
+        lines.push(`{${location}}`)
 
         lines.push(`\\resumeItemListBelowSubHeadingStart`)
         for (const item of items) {

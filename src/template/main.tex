@@ -63,15 +63,15 @@
 
 % Mark a resume subheading. The title is all-caps, and a horizontal rule is drawn under the title.
 % 
-% #1 - company
-% #2 - location (aligned right)
-% #3 - job title or degree
-% #4 - date (aligned right)
+% #1 - job title or degree
+% #2 - date (aligned right)
+% #3 - company
+% #4 - location (aligned right)
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}
     \begin{tabular*}{0.995\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \small #4 \\
+      \textit{\small #3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-2pt}
 }
 

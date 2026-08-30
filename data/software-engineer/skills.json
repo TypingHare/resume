@@ -12,26 +12,21 @@
       "Lua",
       "Rust",
       "Bash",
-      "Markdown",
       "SQL",
-      "HTML/CSS",
-      "LaTeX",
-      "XML",
-      "TOML"
+      "HTML/CSS"
     ]
   },
   {
     "type": "Frameworks and Libraries",
     "items": [
+      "React",
       "Spring Boot",
       "Node.js",
-      "React",
+      "Vite",
       "MUI",
       "NestJS",
-      "Vite",
-      "JUnit",
-      "Nest.js",
       "Drizzle ORM",
+      "JUnit",
       "Numpy",
       "Pandas",
       "Matplotlib",
@@ -43,8 +38,8 @@
   {
     "type": "Databases and APIs",
     "items": [
-      "MySQL",
       "PostgreSQL",
+      "MySQL",
       "MongoDB",
       "Redis",
       "HTTPS",
@@ -59,9 +54,9 @@
     "items": [
       "Git",
       "GitHub",
+      "Docker",
       "Nginx",
       "systemd",
-      "Docker",
       "AWS EC2/Lightsail",
       "POSIX",
       "npm/pnpm/bun",
