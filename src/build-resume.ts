@@ -59,9 +59,11 @@ async function build() {
     const contentItems: string[] = [
         await renderHeadingSection(heading),
         await renderEducationSection(educationEntries),
-        await renderSkillsSection(skillEntries),
+        "\\vspace{5pt}",
         await renderWorkExperienceSection(workExperienceEntries),
         await renderProjectsSection(projectEntries),
+        "\\vspace{5pt}",
+        await renderSkillsSection(skillEntries),
     ]
 
     const fileContent: string = replaceTemplatePlaceholders(
