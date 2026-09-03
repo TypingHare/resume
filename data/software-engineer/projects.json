@@ -9,7 +9,7 @@
   },
   {
     "name": "Outpost (\\href{https://app.jameschen.life/outpost/repo}{app.jameschen.life/outpost/repo})",
-    "description": "A tool that creates a temporary high-performance DigitalOcean droplet (a cloud instance) and hosts a Minecraft server there. It automatically uploads the game directory on start and downloads it on stop."
+    "description": "A tool that creates a temporary high-performance DigitalOcean Droplet and hosts a Minecraft server there. It automatically uploads the game directory on start and downloads it on stop."
   },
   {
     "name": "Burrow (\\href{https://github.com/TypingHare/burrow}{github.com/TypingHare/burrow})",

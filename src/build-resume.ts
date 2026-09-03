@@ -19,7 +19,7 @@ import path from 'path'
 import type {
     EducationEntry,
     Env,
-    Heading,
+    Header,
     ProjectEntry,
     SkillEntry,
     WorkExperienceEntry,
@@ -27,7 +27,7 @@ import type {
 import { loadDataFromJson } from './data'
 import {
     renderEducationSection,
-    renderHeadingSection,
+    renderHeaderSection,
     renderProjectsSection,
     renderSkillsSection,
     renderWorkExperienceSection,
@@ -41,7 +41,7 @@ const RESUME_DIR = path.join(DATA_DIR, resumeName)
 const env: Env = { commonDir: COMMON_DIR, resumeDir: RESUME_DIR }
 
 async function build() {
-    const heading = await loadDataFromJson<Heading>(env, 'heading')
+    const header = await loadDataFromJson<Header>(env, 'header')
     const educationEntries = await loadDataFromJson<EducationEntry[]>(
         env,
         'education'
@@ -57,7 +57,7 @@ async function build() {
     )
 
     const contentItems: string[] = [
-        await renderHeadingSection(heading),
+        await renderHeaderSection(header),
         await renderEducationSection(educationEntries),
         "\\vspace{5pt}",
         await renderWorkExperienceSection(workExperienceEntries),

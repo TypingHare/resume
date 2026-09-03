@@ -6,7 +6,7 @@
 % Customize headers and footers.
 \usepackage{fancyhdr}
 
-% Customize section headings (e.g., font size and spacing).
+% Customize section headers (e.g., font size and spacing).
 \usepackage{titlesec}
 
 % Add a collection of useful symbols, such as phone(☎) and email(✉).
@@ -61,13 +61,13 @@
   \color{black}\titlerule \vspace{-5pt}
 ]
 
-% Mark a resume subheading. The title is all-caps, and a horizontal rule is drawn under the title.
+% Mark a resume subheader. The title is all-caps, and a horizontal rule is drawn under the title.
 % 
 % #1 - job title or degree
 % #2 - date (aligned right)
 % #3 - company
 % #4 - location (aligned right)
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeSubheader}[4]{
   \vspace{-1pt}
     \begin{tabular*}{0.995\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
@@ -75,11 +75,11 @@
     \end{tabular*}\vspace{-2pt}
 }
 
-% Mark the start of a subheading list.
-\newcommand{\resumeSubHeadingListStart}{}
+% Mark the start of a subheader list.
+\newcommand{\resumeSubHeaderListStart}{}
 
-% Mark the end of a subheading list.
-\newcommand{\resumeSubHeadingListEnd}{\vspace{-9pt}}
+% Mark the end of a subheader list.
+\newcommand{\resumeSubHeaderListEnd}{\vspace{-9pt}}
 
 % Mark a resume item.
 \newcommand{\resumeItem}[2]{
@@ -97,13 +97,13 @@
 % Mark the end of a resume item list.
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
-% Mark resume item list below subheading start.
-\newcommand{\resumeItemListBelowSubHeadingStart}{
+% Mark resume item list below subheader start.
+\newcommand{\resumeItemListBelowSubHeaderStart}{
   \vspace{-10pt}\resumeItemListStart
 }
 
-% Mark resume item list below subheading end.
-\newcommand{\resumeItemListBelowSubHeadingEnd}{
+% Mark resume item list below subheader end.
+\newcommand{\resumeItemListBelowSubHeaderEnd}{
   \resumeItemListEnd\vspace{4pt}
 }
 

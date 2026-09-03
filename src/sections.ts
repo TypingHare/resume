@@ -1,7 +1,7 @@
 import { parseDate } from './common'
 import type {
     EducationEntry,
-    Heading,
+    Header,
     ProjectEntry,
     SkillEntry,
     WorkExperienceEntry,
@@ -9,26 +9,26 @@ import type {
 import { loadTemplateContent, replaceTemplatePlaceholders } from './template'
 
 /**
- * Renders the resume heading section by populating the heading LaTeX template
- * with contact information from the heading data file.
+ * Renders the resume header section by populating the header LaTeX template
+ * with contact information from the header data file.
  *
- * @param heading Heading data loaded from `heading.json`.
- * @returns The rendered heading section as a LaTeX string.
+ * @param header Header data loaded from `header.json`.
+ * @returns The rendered header section as a LaTeX string.
  */
-export async function renderHeadingSection(heading: Heading): Promise<string> {
-    const { name, email, mobile, website, location } = heading
+export async function renderHeaderSection(header: Header): Promise<string> {
+    const { name, email, mobile, linkedin, website } = header
 
-    return replaceTemplatePlaceholders(await loadTemplateContent('heading'), {
+    return replaceTemplatePlaceholders(await loadTemplateContent('header'), {
         name,
         email,
         mobile,
+        linkedin,
         website,
-        location,
     })
 }
 
 /**
- * Renders the education section as LaTeX resume subheadings sorted by
+ * Renders the education section as LaTeX resume subheaders sorted by
  * graduation date.
  *
  * @param educationEntries Education records loaded from `education.json`.
@@ -39,7 +39,7 @@ export async function renderEducationSection(
 ): Promise<string> {
     const lines: string[] = [
         '\\section{Education}',
-        '\\resumeSubHeadingListStart',
+        '\\resumeSubHeaderListStart',
     ]
 
     educationEntries = educationEntries.sort((a, b) => {
@@ -64,7 +64,7 @@ export async function renderEducationSection(
 
         const gpaString = gpa ? `; GPA: ${gpa}/${maxGpa}` : ''
 
-        lines.push(`\\resumeSubheading`)
+        lines.push(`\\resumeSubheader`)
         lines.push(`{${school}}`)
         lines.push(`{${location}}`)
         lines.push(`{${degree} in ${major}${gpaString}}`)
@@ -85,7 +85,7 @@ export async function renderEducationSection(
         }
     }
 
-    lines.push('\\resumeSubHeadingListEnd')
+    lines.push('\\resumeSubHeaderListEnd')
 
     return lines.join('\n')
 }
@@ -117,7 +117,7 @@ export async function renderWorkExperienceSection(
 ): Promise<string> {
     const lines: string[] = [
         '\\section{Work Experience}',
-        '\\resumeSubHeadingListStart',
+        '\\resumeSubHeaderListStart',
     ]
 
     workExperienceEntries = workExperienceEntries.sort((a, b) => {
@@ -130,20 +130,20 @@ export async function renderWorkExperienceSection(
         const { company, position, startDate, endDate, location, items } =
             workExperienceEntries[i] as WorkExperienceEntry
 
-        lines.push(`\\resumeSubheading`)
+        lines.push(`\\resumeSubheader`)
         lines.push(`{${position}}`)
         lines.push(`{${startDate} -- ${endDate}}`)
         lines.push(`{${company}}`)
         lines.push(`{${location}}`)
 
-        lines.push(`\\resumeItemListBelowSubHeadingStart`)
+        lines.push(`\\resumeItemListBelowSubHeaderStart`)
         for (const item of items) {
             lines.push(`\\resumeItemNoTitle{${item}}`)
         }
-        lines.push(`\\resumeItemListBelowSubHeadingEnd`)
+        lines.push(`\\resumeItemListBelowSubHeaderEnd`)
     }
 
-    lines.push(`\\resumeSubHeadingListEnd`)
+    lines.push(`\\resumeSubHeaderListEnd`)
 
     return lines.join('\n')
 }
@@ -153,7 +153,7 @@ export async function renderProjectsSection(
 ): Promise<string> {
     const lines: string[] = [
         '\\section{Projects}',
-        '\\resumeSubHeadingListStart',
+        '\\resumeSubHeaderListStart',
         '\\resumeItemListStart',
     ]
 
@@ -162,7 +162,7 @@ export async function renderProjectsSection(
         lines.push(`\\resumeItem{${name}}{${description}}`)
     }
 
-    lines.push(`\\resumeSubHeadingListEnd`)
+    lines.push(`\\resumeSubHeaderListEnd`)
     lines.push(`\\resumeItemListEnd`)
 
     return lines.join('\n')

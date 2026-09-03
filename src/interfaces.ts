@@ -10,18 +10,20 @@ export interface Env {
 }
 
 /**
- * Resume heading content injected into the heading LaTeX template.
+ * Resume header content injected into the header LaTeX template.
  *
- * @property name Full name displayed in the heading.
- * @property email Email address shown in the heading contact details.
- * @property mobile Phone number shown in the heading contact details.
- * @property website Personal website or profile link shown in the heading.
- * @property location Location text shown in the heading.
+ * @property name Full name displayed in the header.
+ * @property email Email address shown in the header contact details.
+ * @property mobile Phone number shown in the header contact details.
+ * @property linkedin URL to LinkedIn profile.
+ * @property website Personal website or profile link shown in the header.
+ * @property location Location text shown in the header.
  */
-export interface Heading {
+export interface Header {
     name: string
     email: string
     mobile: string
+    linkedin: string
     website: string
     location: string
 }

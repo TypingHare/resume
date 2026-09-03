@@ -1,22 +1,22 @@
 [
   {
-    "name": "\\href{https://bloxtopia.gg}{Bloxtopia}",
+    "name": "Bloxtopia (\\href{https://bloxtopia.gg}{bloxtopia.gg})",
     "description": "A startup project targeting Roblox players. Users can complete tasks on the offerwall to earn Robux, which they can then redeem to their Roblox accounts. Next.js and Nodemailer were used in this project."
   },
   {
-    "name": "\\href{https://github.com/DMax1314/Nemotron}{Nemotron}",
+    "name": "Nemotron (\\href{https://github.com/DMax1314/Nemotron}{github.com/DMax1314/Nemotron})",
     "description": "An online challenge where competitors fine-tune a foundation LLM, NVIDIA Nemotron, using LoRA adapters. PEFT and vLLM were used in this project. Our team achieved an accuracy of 0.85."
   },
   {
-    "name": "\\href{https://github.com/TypingHare/snowy/tree/main/app/outpost}{(Snowy) Outpost}",
-    "description": "A tool that creates a temporary high-performance DigitalOcean droplet (a cloud instance) and hosts a Minecraft server there. It automatically uploads the game directory on start and downloads it on stop."
+    "name": "Outpost (\\href{https://app.jameschen.life/outpost/repo}{app.jameschen.life/outpost/repo})",
+    "description": "A tool that creates a temporary high-performance DigitalOcean Droplet and hosts a Minecraft server there. It automatically uploads the game directory on start and downloads it on stop."
   },
   {
-    "name": "\\href{https://github.com/TypingHare/burrow}{Burrow}",
+    "name": "Burrow (\\href{https://github.com/TypingHare/burrow}{github.com/TypingHare/burrow})",
     "description": "An extensible command-line application platform that lets users create independent CLI applications (chambers) composed of extensions, which can start in under 20 milliseconds. There are built-in modules for chamber management, configuration editing, HTTP server startup, and self-build/update workflows."
   },
   {
-    "name": "\\href{https://github.com/TypingHare/bg-clock}{BG Clock}",
+    "name": "BG Clock (\\href{https://bgc.jameschen.life}{bgc.jameschen.life})",
     "description": "A responsive touchscreen clock application for board games like Go and Chess, built with \\textbf{Vite}, \\textbf{React}, and \\textbf{Chakra UI}. It has an internal modular game core with a precise game loop for accurate timekeeping, and an extensible trigger system for flexible mode support. (Live Demo: \\href{https://bgc.jameschen.life}{https://bgc.jameschen.life})"
   }
 ]
