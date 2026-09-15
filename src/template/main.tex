@@ -55,11 +55,11 @@
 \usepackage{enumitem}
 
 % Format sections; insert a black horizontal rule under the section title.
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[
-  \color{black}\titlerule \vspace{-5pt}
-]
+\titleformat{\section}
+    {\scshape\raggedright\large}
+    {}{0em}{}
+    [\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
 
 % Mark a resume subheader. The title is all-caps, and a horizontal rule is drawn under the title.
 % 
@@ -79,16 +79,16 @@
 \newcommand{\resumeSubHeaderListStart}{}
 
 % Mark the end of a subheader list.
-\newcommand{\resumeSubHeaderListEnd}{\vspace{-9pt}}
+\newcommand{\resumeSubHeaderListEnd}{}
 
 % Mark a resume item.
 \newcommand{\resumeItem}[2]{
-  \item\small{\textbf{#1}{: #2\vspace{-6pt}}}
+  \normalsize\item \textbf{#1}: #2\vspace{-6pt}
 }
 
 % Mark a resume item without titles.
 \newcommand{\resumeItemNoTitle}[1]{
-  \item\small{#1\vspace{-8pt}}
+  \normalsize\item #1\vspace{-8pt}
 }
 
 % Mark the start of a resume item list.

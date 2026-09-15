@@ -66,14 +66,13 @@ export async function renderEducationSection(
 
         lines.push(`\\resumeSubheader`)
         lines.push(`{${school}}`)
-        lines.push(`{${location}}`)
-        lines.push(`{${degree} in ${major}${gpaString}}`)
-
         if (enrollmentDate) {
             lines.push(`{${enrollmentDate} -- ${graduationDate}}`)
         } else {
             lines.push(`{Expected ${graduationDate}}`)
         }
+        lines.push(`{${degree} in ${major}${gpaString}}`)
+        lines.push(`{${location}}`)
 
         if (scholarship) {
             lines.push(`\\par\\vspace{-4 pt}`)
@@ -162,8 +161,10 @@ export async function renderProjectsSection(
         lines.push(`\\resumeItem{${name}}{${description}}`)
     }
 
-    lines.push(`\\resumeSubHeaderListEnd`)
     lines.push(`\\resumeItemListEnd`)
+    // Keep the list's closing space separate from the next heading's space.
+    lines.push(`\\vspace{0pt}`)
+    lines.push(`\\resumeSubHeaderListEnd`)
 
     return lines.join('\n')
 }

@@ -45,7 +45,7 @@
       "HTTPS",
       "RESTful",
       "GraphQL",
-      "WebSockets",
+      "WebSocket",
       "Swagger"
     ]
   },
@@ -59,9 +59,8 @@
       "systemd",
       "AWS EC2/Lightsail",
       "POSIX",
-      "npm/pnpm/bun",
-      "Neovim",
-      "Postman"
+      "npm/bun",
+      "Neovim"
     ]
   },
   {

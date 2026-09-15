@@ -5,8 +5,8 @@
     "major": "Packaging Engineering",
     "gpa": "3.28",
     "maxGpa": "4.0",
-    "enrollmentDate": "Sep. 2017",
-    "graduationDate": "Jun. 2021",
+    "enrollmentDate": "Sep 2017",
+    "graduationDate": "Jun 2021",
     "location": "Guangdong, China"
   },
   {
@@ -15,8 +15,8 @@
     "major": "Computer Science",
     "gpa": "4.0",
     "maxGpa": "4.0",
-    "enrollmentDate": "Jun. 2022",
-    "graduationDate": "Dec. 2023",
+    "enrollmentDate": "Jun 2022",
+    "graduationDate": "Dec 2023",
     "location": "Boston, MA"
   },
   {
@@ -25,8 +25,8 @@
     "major": "Computer Science",
     "gpa": "4.0",
     "maxGpa": "4.0",
-    "enrollmentDate": "Jan. 2024",
-    "graduationDate": "Dec. 2025",
+    "enrollmentDate": "Jan 2024",
+    "graduationDate": "Dec 2025",
     "location": "Lowell, MA",
     "scholarship": "Chancellor’s Medals for Distinguished Academic Achievement"
   },
@@ -36,8 +36,8 @@
     "major": "Computer Science",
     "gpa": "",
     "maxGpa": "4.0",
-    "enrollmentDate": "Sep. 2026",
-    "graduationDate": "Dec. 2027",
+    "enrollmentDate": "Sep 2026",
+    "graduationDate": "Dec 2027",
     "location": "New York, NY",
     "scholarship": "Dean's MS Academic Excellence Fellowship - \\$15,000"
   }

@@ -59,10 +59,8 @@ async function build() {
     const contentItems: string[] = [
         await renderHeaderSection(header),
         await renderEducationSection(educationEntries),
-        "\\vspace{5pt}",
         await renderWorkExperienceSection(workExperienceEntries),
         await renderProjectsSection(projectEntries),
-        "\\vspace{5pt}",
         await renderSkillsSection(skillEntries),
     ]
 

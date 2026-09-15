@@ -2,39 +2,39 @@
   {
     "company": "UMass Lowell - Miner School of Computer and Information Sciences",
     "position": "Software Engineering Intern",
-    "startDate": "May. 2025",
-    "endDate": "Dec. 2025",
+    "startDate": "May 2025",
+    "endDate": "Dec 2025",
     "location": "Lowell, MA",
     "items": [
-      "Migrated 28k+ AEPW (Alliance to End Plastic Waste) records into a analytical PostgreSQL schema, cutting query times by about 70\\% and improving data integrity.",
+      "Migrated 28,000+ Alliance to End Plastic Waste (AEPW) records into an analytical PostgreSQL schema, reducing query times by approximately 70\\% and strengthening data integrity.",
       "Designed and implemented AUDA, a Python analytics platform for data cleaning, preprocessing, model execution, and visualization.",
-      "Built and evaluated machine learning workflows for sparse country-level time series, including Isolation Forest anomaly detection, Random Forest feature importance, and forecasting/reconstruction with automated hyperparameter optimization.",
-      "Developed a Typer-based CLI to automate analytics workflows, improving reproducibility, maintainability, and developer productivity."
+      "Developed and evaluated machine learning workflows to detect anomalies, forecast trends, and reconstruct missing plastic waste and resin consumption data across 192 countries.",
+      "Built a Python CLI using Typer to automate analytics workflows and improve reproducibility."
     ]
   },
   {
     "company": "Take 2 Health",
     "position": "Backend Developer Intern",
-    "startDate": "Mar. 2021",
-    "endDate": "Sep. 2021",
+    "startDate": "Mar 2021",
+    "endDate": "Sep 2021",
     "location": "Shenzhen, China",
     "items": [
-      "Engineered the backend for a blood specimen management platform using Midway.js, implementing JWT-based authentication and RESTful APIs for user and specimen operations.",
-      "Created Swagger API documentation to streamline integration and testing, and collaborated with frontend engineers to ensure reliable interface behavior.",
-      "Architected a microservice-based system using gRPC for high-performance inter-service communication, improving scalability and modularity."
+      "Delivered a backend for a blood specimen management platform using Midway.js, with JWT authentication and RESTful APIs for specimen registration and processing status updates.",
+      "Migrated 90+ API endpoints from Spring Boot to JavaScript/TypeScript, documented APIs in Swagger, and coordinated integration with frontend engineers.",
+      "Designed a microservices architecture to isolate service failures and simplify maintenance, implementing an initial user service with gRPC communication."
     ]
   },
   {
     "company": "Juyingtong",
     "position": "Backend Developer",
-    "startDate": "Nov. 2018",
-    "endDate": "Feb. 2020",
+    "startDate": "Nov 2018",
+    "endDate": "Feb 2020",
     "location": "Zhuhai, China",
     "items": [
-      "Developed the backend for a WeChat mini-program for conference management using ThinkPHP 5 and MySQL, with Redis-backed session authentication and RESTful APIs for user and event operations.",
-      "Built a location-aware attendee check-in system using QR code scanning, encrypted conference metadata, WeChat geolocation validation, and real-time attendance recording.",
-      "Integrated the WeChat Pay API to support secure, real-time payment processing for conference registration and related services.",
-      "Deployed the application on Alibaba Cloud Linux servers with Nginx reverse proxy and load balancing, using systemd for process management."
+      "Developed a conference management backend for a WeChat mini-program with ThinkPHP 5, MySQL, Redis session authentication, and RESTful APIs.",
+      "Implemented QR code check-in with WeChat geolocation validation, restricting attendance registration to users within the venue’s allowed radius and one check-in per user per conference.",
+      "Integrated WeChat Pay for conference registration payments and refunds upon cancellation.",
+      "Deployed the application on Alibaba Cloud Linux servers, configured Nginx reverse proxy and load balancing, and managed application processes with systemd."
     ]
   }
 ]
