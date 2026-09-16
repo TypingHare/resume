@@ -7,9 +7,9 @@
     "location": "Lowell, MA",
     "items": [
       "Migrated 28,000+ Alliance to End Plastic Waste (AEPW) records into an analytical PostgreSQL schema, reducing query times by approximately 70\\% and strengthening data integrity.",
-      "Designed and implemented AUDA, a Python analytics platform for data cleaning, preprocessing, model execution, and visualization.",
+      "Designed and implemented AUDA, a Python analytics platform with a Typer CLI to automate data preprocessing, model execution, and visualization for reproducible experiments.",
       "Developed and evaluated machine learning workflows to detect anomalies, forecast trends, and reconstruct missing plastic waste and resin consumption data across 192 countries.",
-      "Built a Python CLI using Typer to automate analytics workflows and improve reproducibility."
+      "Presented research progress and proposed approaches to a 12-member research group, explaining analytical limitations."
     ]
   },
   {

@@ -1,11 +1,11 @@
 [
   {
     "name": "Bloxtopia (\\href{https://bloxtopia.gg}{bloxtopia.gg})",
-    "description": "Built a rewards platform for Roblox players with Next.js and Nodemailer, enabling users to complete sponsored tasks and redeem earnings for Robux."
+    "description": "Built a rewards platform for Roblox players with Next.js and Nodemailer, enabling users to complete sponsored tasks and redeem earnings for Robux. Collaborated with teammates to resolve frontend–backend integration issues by introducing a gateway layer that centralized mock data for testing and routed production requests to backend services."
   },
   {
     "name": "Nemotron (\\href{https://github.com/DMax1314/Nemotron}{github.com/DMax1314/Nemotron})",
-    "description": "Fine-tuned NVIDIA Nemotron with LoRA adapters, increasing accuracy from 30\\% to 85\\% on math, physics, and computer science reasoning problems."
+    "description": "Wrote fine-tuning scripts for a three-person team, coordinating execution on teammates’ H200 GPU resources to improve NVIDIA Nemotron’s reasoning accuracy from 30\\% to 85\\%."
   },
   {
     "name": "Outpost (\\href{https://app.jameschen.life/outpost/repo}{app.jameschen.life/outpost/repo})",
@@ -13,7 +13,7 @@
   },
   {
     "name": "Burrow (\\href{https://github.com/TypingHare/burrow}{github.com/TypingHare/burrow})",
-    "description": "Created an extensible CLI platform with startup times under 20 milliseconds and built-in modules for configuration, HTTP server startup, and self-updates."
+    "description": "Created an extensible CLI platform with startup times under 20 milliseconds and built-in modules for configuration, HTTP server startup, and self-updates. "
   },
   {
     "name": "BG Clock (\\href{https://bgc.jameschen.life}{bgc.jameschen.life})",
