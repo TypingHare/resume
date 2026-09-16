@@ -1,5 +1,23 @@
 \documentclass[letterpaper,10pt]{article}
 
+% Line spacing
+\linespread{0.95}
+
+% Load Calibri with XeLaTeX, using Word's bundled fonts if needed.
+\usepackage{fontspec}
+\IfFontExistsTF{Calibri}{
+  \setmainfont{Calibri}
+}{
+  \setmainfont{Calibri}[
+    Path = /Applications/Microsoft Word.app/Contents/Resources/DFonts/,
+    Extension = .ttf,
+    UprightFont = Calibri,
+    BoldFont = Calibrib,
+    ItalicFont = Calibrii,
+    BoldItalicFont = Calibriz
+  ]
+}
+
 % Reduce the default LaTeX page margins and remove default headers and footers.
 \usepackage[empty]{fullpage}
 
@@ -69,11 +87,11 @@
 % #4 - location (aligned right)
 \newcommand{\resumeSubheader}[4]{
   \vspace{-1pt}
-    \begin{tabular*}{0.995\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.997\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      % \textit{\small #3} & \textit{\small #4} \\
-      \small #3 & \small #4 \\
-    \end{tabular*}\vspace{-2pt}
+      \textit{#3} & \textit{#4} \\
+      % \small #3 & \small #4 \\
+    \end{tabular*}
 }
 
 % Mark the start of a subheader list.
@@ -84,12 +102,12 @@
 
 % Mark a resume item.
 \newcommand{\resumeItem}[2]{
-  \normalsize\item \textbf{#1}: #2\vspace{-6pt}
+  \normalsize\item \textbf{#1}: #2
 }
 
 % Mark a resume item without titles.
 \newcommand{\resumeItemNoTitle}[1]{
-  \normalsize\item #1\vspace{-8pt}
+  \normalsize\item #1\vspace{-2pt}
 }
 
 % Mark the start of a resume item list.
@@ -100,7 +118,7 @@
 
 % Mark resume item list below subheader start.
 \newcommand{\resumeItemListBelowSubHeaderStart}{
-  \vspace{-10pt}\resumeItemListStart
+  \vspace{-6pt}\resumeItemListStart
 }
 
 % Mark resume item list below subheader end.

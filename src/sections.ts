@@ -75,8 +75,8 @@ export async function renderEducationSection(
         lines.push(`{${location}}`)
 
         if (scholarship) {
-            lines.push(`\\par\\vspace{-4 pt}`)
-            lines.push(`${scholarship}`)
+            lines.push(`\\par\\vspace{-6 pt}`)
+            lines.push(`\\small ${scholarship}`)
         }
 
         if (Number(i) !== educationEntries.length - 1) {
