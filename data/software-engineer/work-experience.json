@@ -9,7 +9,7 @@
       "Designed and implemented AUDA, a Python analytics platform with a Typer CLI that automates data preprocessing, model execution, and visualization for reproducible experiments.",
       "Migrated 28,000+ Alliance to End Plastic Waste (AEPW) records into an analytical PostgreSQL schema, reducing query times by approximately 70\\% and strengthening data integrity.",
       "Developed and evaluated machine learning workflows to detect anomalies, forecast trends, and reconstruct missing plastic waste and resin consumption data across 192 countries.",
-      "Authored a research paper on AUDA as first author, accepted for publication in \\textit{Data} (Sep, 2026)."
+      "Authored a research paper on AUDA as first author, accepted for publication in \\textit{Data} (DOI: 10.3390/data11100266)."
     ]
   },
   {
